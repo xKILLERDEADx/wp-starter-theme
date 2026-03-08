@@ -1,4 +1,4 @@
-=== WP Starter Theme ===
+=== Devstarter ===
 Contributors: muhammadabid
 Requires at least: 5.9
 Tested up to: 6.4
@@ -7,11 +7,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A clean, developer-friendly WordPress starter theme for building custom projects.
+A clean, developer-friendly starter for building custom WordPress projects.
 
 == Description ==
 
-WP Starter Theme is a lightweight starter theme built for developers who want a clean foundation for custom WordPress projects. It includes modular PHP architecture, page builder compatibility (Elementor, Divi), WooCommerce support, Theme Customizer integration, and responsive CSS.
+Devstarter is a lightweight starter built for developers who want a clean foundation for custom WordPress projects. It includes modular PHP architecture, page builder compatibility (Elementor, Divi), WooCommerce support, Customizer integration, and responsive CSS.
 
 == Features ==
 
@@ -26,12 +26,12 @@ WP Starter Theme is a lightweight starter theme built for developers who want a 
 * SEO friendly semantic HTML5
 * AJAX ready with localized scripts
 * Elementor and Divi page builder compatible
-* Theme Customizer settings for colors, header, footer, and layout
+* Customizer settings for colors, header, footer, and layout
 
 == Installation ==
 
-1. Upload the theme folder to `/wp-content/themes/`
-2. Activate the theme through `Appearance > Themes`
+1. Upload the folder to `/wp-content/themes/`
+2. Activate through `Appearance > Themes`
 3. Set up your navigation menu from `Appearance > Menus`
 4. Customize colors and layout from `Appearance > Customize`
 
@@ -42,10 +42,10 @@ WP Starter Theme is a lightweight starter theme built for developers who want a 
 
 == Copyright ==
 
-WP Starter Theme, Copyright 2026 Muhammad Abid
-WP Starter Theme is distributed under the terms of the GNU GPL v2 or later.
+Devstarter, Copyright 2026 Muhammad Abid
+Devstarter is distributed under the terms of the GNU GPL v2 or later.
 
 == Resources ==
 
-* Based on starter theme practices from WordPress Theme Handbook
+* Based on starter practices from the WordPress Developer Handbook
 * normalize.css, Copyright Nicolas Gallagher and Jonathan Neal, MIT License

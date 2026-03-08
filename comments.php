@@ -18,7 +18,7 @@ if ( post_password_required() ) {
             <?php
             $comment_count = get_comments_number();
             printf(
-                esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', $comment_count, 'comments title', 'wp-starter-theme' ) ),
+                esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', $comment_count, 'comments title', 'devstarter' ) ),
                 number_format_i18n( $comment_count ),
                 get_the_title()
             );
@@ -40,7 +40,7 @@ if ( post_password_required() ) {
         <?php the_comments_navigation(); ?>
 
         <?php if ( ! comments_open() ) : ?>
-            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp-starter-theme' ); ?></p>
+            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'devstarter' ); ?></p>
         <?php endif; ?>
 
     <?php endif; ?>

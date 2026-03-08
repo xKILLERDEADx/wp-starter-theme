@@ -5,7 +5,7 @@
  * Ensures seamless integration with Elementor, Divi Builder,
  * and other popular page builders.
  *
- * @package starter
+ * @package devstarter
  * @since   1.0.0
  */
 
@@ -111,7 +111,7 @@ function starter_register_elementor_category( $elements_manager ) {
     $elements_manager->add_category(
         'starter-widgets',
         array(
-            'title' => __( 'Starter Theme', 'wp-starter-theme' ),
+            'title' => __( 'Starter Theme', 'devstarter' ),
             'icon'  => 'fa fa-plug',
         )
     );

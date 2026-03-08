@@ -2,7 +2,7 @@
 /**
  * Widget Areas Registration
  *
- * @package starter
+ * @package devstarter
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function starter_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Sidebar', 'wp-starter-theme' ),
+        'name'          => __( 'Sidebar', 'devstarter' ),
         'id'            => 'sidebar-1',
-        'description'   => __( 'Main sidebar widget area.', 'wp-starter-theme' ),
+        'description'   => __( 'Main sidebar widget area.', 'devstarter' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
@@ -26,9 +26,9 @@ function starter_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'Footer Widget 1', 'wp-starter-theme' ),
+        'name'          => __( 'Footer Widget 1', 'devstarter' ),
         'id'            => 'footer-1',
-        'description'   => __( 'First footer widget area.', 'wp-starter-theme' ),
+        'description'   => __( 'First footer widget area.', 'devstarter' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
@@ -36,9 +36,9 @@ function starter_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'Footer Widget 2', 'wp-starter-theme' ),
+        'name'          => __( 'Footer Widget 2', 'devstarter' ),
         'id'            => 'footer-2',
-        'description'   => __( 'Second footer widget area.', 'wp-starter-theme' ),
+        'description'   => __( 'Second footer widget area.', 'devstarter' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',

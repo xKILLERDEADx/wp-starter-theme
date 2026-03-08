@@ -1,6 +1,6 @@
-# WP Starter Theme
+# Devstarter
 
-A clean, developer-friendly WordPress starter theme for building custom projects. No bloat, no page builders - just solid PHP, clean hooks, and proper WordPress coding standards.
+A clean, developer-friendly starter for building custom WordPress projects. No bloat, no page builders - just solid PHP, clean hooks, and proper coding standards.
 
 ## Features
 
@@ -26,47 +26,51 @@ A clean, developer-friendly WordPress starter theme for building custom projects
 
 ```bash
 cd wp-content/themes/
-git clone https://github.com/xKILLERDEADx/wp-starter-theme.git
+git clone https://github.com/xKILLERDEADx/devstarter.git
 ```
 
-2. Activate the theme from **Appearance → Themes** in WordPress admin.
+2. Activate from **Appearance > Themes** in WordPress admin.
 
-3. Set up your navigation menu from **Appearance → Menus**.
+3. Set up your navigation menu from **Appearance > Menus**.
 
 ## Structure
 
 ```
-wp-starter-theme/
-├── style.css                ← Theme info + base styles
-├── functions.php            ← Theme setup and includes
-├── header.php               ← Site header + navigation
-├── footer.php               ← Site footer + widgets
-├── index.php                ← Main template
-├── single.php               ← Single post
-├── page.php                 ← Page template
-├── archive.php              ← Archive/category pages
-├── search.php               ← Search results
-├── 404.php                  ← 404 error page
-├── sidebar.php              ← Sidebar widget area
+devstarter/
+├── style.css                - Header info
+├── functions.php            - Setup and includes
+├── header.php               - Site header + navigation
+├── footer.php               - Site footer + widgets
+├── index.php                - Main template
+├── single.php               - Single post
+├── page.php                 - Page template
+├── archive.php              - Archive/category pages
+├── search.php               - Search results
+├── 404.php                  - 404 error page
+├── sidebar.php              - Sidebar widget area
+├── comments.php             - Comments template
 ├── /assets/
-│   ├── /css/main.css        ← Custom styles
-│   ├── /js/main.js          ← Custom scripts
-│   └── /images/             ← Theme images
+│   ├── /css/main.css        - Custom styles
+│   ├── /js/main.js          - Custom scripts
+│   └── /images/             - Images
 ├── /inc/
-│   ├── theme-support.php    ← Theme features + menus
-│   ├── enqueue.php          ← Scripts/styles loading
-│   ├── custom-post-types.php ← CPT registration
-│   └── widgets.php          ← Widget areas
+│   ├── theme-support.php    - Features + menus
+│   ├── enqueue.php          - Scripts/styles loading
+│   ├── customizer.php       - Customizer settings
+│   ├── custom-post-types.php - CPT registration
+│   ├── page-builders.php    - Page builder support
+│   └── widgets.php          - Widget areas
 └── /template-parts/
-    ├── content.php           ← Post loop content
-    └── content-none.php      ← No results content
+    ├── content.php           - Post loop content
+    ├── content-none.php      - No results content
+    └── content-search.php    - Search result content
 ```
 
 ## Customization
 
 ### CSS Variables
 
-Edit the CSS custom properties in `style.css` to match your project:
+Edit the CSS custom properties in `assets/css/main.css` to match your project:
 
 ```css
 :root {

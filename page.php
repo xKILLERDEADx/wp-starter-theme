@@ -2,7 +2,7 @@
 /**
  * Page Template
  *
- * @package starter
+ * @package devstarter
  */
 
 get_header(); ?>

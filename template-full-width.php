@@ -6,7 +6,7 @@
  * A full-width page template without sidebar.
  * Compatible with Elementor and Divi Builder.
  *
- * @package starter
+ * @package devstarter
  * @since   1.0.0
  */
 

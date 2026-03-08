@@ -21,13 +21,13 @@
             <?php endif; ?>
         </div>
 
-        <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'wp-starter-theme' ); ?>">
+        <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'devstarter' ); ?>">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
-        <nav class="main-navigation" id="site-navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'wp-starter-theme' ); ?>">
+        <nav class="main-navigation" id="site-navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'devstarter' ); ?>">
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'primary',

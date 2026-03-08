@@ -2,7 +2,7 @@
 /**
  * Single Post Template
  *
- * @package starter
+ * @package devstarter
  */
 
 get_header(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
                     <?php the_content(); ?>
                     <?php
                     wp_link_pages( array(
-                        'before' => '<div class="page-links">' . __( 'Pages:', 'wp-starter-theme' ),
+                        'before' => '<div class="page-links">' . __( 'Pages:', 'devstarter' ),
                         'after'  => '</div>',
                     ) );
                     ?>

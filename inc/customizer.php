@@ -4,7 +4,7 @@
  *
  * Registers options in Appearance > Customize for the theme.
  *
- * @package starter
+ * @package devstarter
  * @since   1.0.0
  */
 
@@ -26,7 +26,7 @@ function starter_customize_register( $wp_customize ) {
      * --------------------------------------------------
      */
     $wp_customize->add_section( 'starter_general', array(
-        'title'    => __( 'General Settings', 'wp-starter-theme' ),
+        'title'    => __( 'General Settings', 'devstarter' ),
         'priority' => 30,
     ) );
 
@@ -38,7 +38,7 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'starter_primary_color', array(
-        'label'   => __( 'Primary Color', 'wp-starter-theme' ),
+        'label'   => __( 'Primary Color', 'devstarter' ),
         'section' => 'starter_general',
     ) ) );
 
@@ -50,7 +50,7 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'starter_secondary_color', array(
-        'label'   => __( 'Secondary Color', 'wp-starter-theme' ),
+        'label'   => __( 'Secondary Color', 'devstarter' ),
         'section' => 'starter_general',
     ) ) );
 
@@ -60,7 +60,7 @@ function starter_customize_register( $wp_customize ) {
      * --------------------------------------------------
      */
     $wp_customize->add_section( 'starter_header', array(
-        'title'    => __( 'Header Settings', 'wp-starter-theme' ),
+        'title'    => __( 'Header Settings', 'devstarter' ),
         'priority' => 35,
     ) );
 
@@ -71,7 +71,7 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'starter_sticky_header', array(
-        'label'   => __( 'Enable Sticky Header', 'wp-starter-theme' ),
+        'label'   => __( 'Enable Sticky Header', 'devstarter' ),
         'section' => 'starter_header',
         'type'    => 'checkbox',
     ) );
@@ -84,7 +84,7 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'starter_header_bg', array(
-        'label'   => __( 'Header Background Color', 'wp-starter-theme' ),
+        'label'   => __( 'Header Background Color', 'devstarter' ),
         'section' => 'starter_header',
     ) ) );
 
@@ -94,7 +94,7 @@ function starter_customize_register( $wp_customize ) {
      * --------------------------------------------------
      */
     $wp_customize->add_section( 'starter_footer', array(
-        'title'    => __( 'Footer Settings', 'wp-starter-theme' ),
+        'title'    => __( 'Footer Settings', 'devstarter' ),
         'priority' => 40,
     ) );
 
@@ -105,10 +105,10 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'starter_footer_text', array(
-        'label'       => __( 'Footer Copyright Text', 'wp-starter-theme' ),
+        'label'       => __( 'Footer Copyright Text', 'devstarter' ),
         'section'     => 'starter_footer',
         'type'        => 'textarea',
-        'description' => __( 'Leave empty to use the default copyright text.', 'wp-starter-theme' ),
+        'description' => __( 'Leave empty to use the default copyright text.', 'devstarter' ),
     ) );
 
     /*
@@ -117,7 +117,7 @@ function starter_customize_register( $wp_customize ) {
      * --------------------------------------------------
      */
     $wp_customize->add_section( 'starter_layout', array(
-        'title'    => __( 'Layout Settings', 'wp-starter-theme' ),
+        'title'    => __( 'Layout Settings', 'devstarter' ),
         'priority' => 45,
     ) );
 
@@ -128,13 +128,13 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'starter_sidebar_position', array(
-        'label'   => __( 'Sidebar Position', 'wp-starter-theme' ),
+        'label'   => __( 'Sidebar Position', 'devstarter' ),
         'section' => 'starter_layout',
         'type'    => 'select',
         'choices' => array(
-            'right' => __( 'Right Sidebar', 'wp-starter-theme' ),
-            'left'  => __( 'Left Sidebar', 'wp-starter-theme' ),
-            'none'  => __( 'No Sidebar (Full Width)', 'wp-starter-theme' ),
+            'right' => __( 'Right Sidebar', 'devstarter' ),
+            'left'  => __( 'Left Sidebar', 'devstarter' ),
+            'none'  => __( 'No Sidebar (Full Width)', 'devstarter' ),
         ),
     ) );
 
@@ -145,7 +145,7 @@ function starter_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( 'starter_container_width', array(
-        'label'       => __( 'Container Width (px)', 'wp-starter-theme' ),
+        'label'       => __( 'Container Width (px)', 'devstarter' ),
         'section'     => 'starter_layout',
         'type'        => 'number',
         'input_attrs' => array(

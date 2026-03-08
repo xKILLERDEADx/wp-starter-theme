@@ -2,7 +2,7 @@
 /**
  * Template part: Post content
  *
- * @package starter
+ * @package devstarter
  */
 ?>
 
@@ -33,7 +33,7 @@
 
         <footer class="entry-footer">
             <a href="<?php the_permalink(); ?>" class="starter-btn">
-                <?php esc_html_e( 'Read More', 'wp-starter-theme' ); ?>
+                <?php esc_html_e( 'Read More', 'devstarter' ); ?>
             </a>
         </footer>
     </div>

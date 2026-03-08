@@ -2,7 +2,7 @@
 /**
  * Enqueue scripts and styles
  *
- * @package starter
+ * @package devstarter
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

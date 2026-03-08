@@ -1,8 +1,8 @@
 <?php
 /**
- * WP Starter Theme - Functions and Definitions
+ * Devstarter - Functions and Definitions
  *
- * @package starter
+ * @package devstarter
  * @version 1.0.0
  * @author  Muhammad Abid
  * @link    https://muhammadabid.com
@@ -49,10 +49,10 @@ add_action( 'after_setup_theme', 'starter_custom_image_sizes' );
  */
 function starter_custom_image_size_names( $sizes ) {
     return array_merge( $sizes, array(
-        'starter-featured'  => __( 'Featured (800x450)', 'wp-starter-theme' ),
-        'starter-thumbnail' => __( 'Thumbnail (400x300)', 'wp-starter-theme' ),
-        'starter-square'    => __( 'Square (600x600)', 'wp-starter-theme' ),
-        'starter-hero'      => __( 'Hero (1920x800)', 'wp-starter-theme' ),
+        'starter-featured'  => __( 'Featured (800x450)', 'devstarter' ),
+        'starter-thumbnail' => __( 'Thumbnail (400x300)', 'devstarter' ),
+        'starter-square'    => __( 'Square (600x600)', 'devstarter' ),
+        'starter-hero'      => __( 'Hero (1920x800)', 'devstarter' ),
     ) );
 }
 add_filter( 'image_size_names_choose', 'starter_custom_image_size_names' );
@@ -79,9 +79,9 @@ add_filter( 'excerpt_more', 'starter_excerpt_more' );
 function starter_pagination() {
     the_posts_pagination( array(
         'mid_size'           => 2,
-        'prev_text'          => '&laquo; ' . __( 'Previous', 'wp-starter-theme' ),
-        'next_text'          => __( 'Next', 'wp-starter-theme' ) . ' &raquo;',
-        'screen_reader_text' => __( 'Posts navigation', 'wp-starter-theme' ),
+        'prev_text'          => '&laquo; ' . __( 'Previous', 'devstarter' ),
+        'next_text'          => __( 'Next', 'devstarter' ) . ' &raquo;',
+        'screen_reader_text' => __( 'Posts navigation', 'devstarter' ),
     ) );
 }
 
@@ -110,7 +110,7 @@ function starter_posted_on() {
 function starter_posted_by() {
     printf(
         '<span class="byline"> %s <a href="%s" rel="author">%s</a></span>',
-        esc_html__( 'by', 'wp-starter-theme' ),
+        esc_html__( 'by', 'devstarter' ),
         esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
         esc_html( get_the_author() )
     );
@@ -123,9 +123,9 @@ function starter_comment_count() {
     if ( ! post_password_required() && comments_open() ) {
         echo '<span class="comments-link">';
         comments_popup_link(
-            __( 'Leave a comment', 'wp-starter-theme' ),
-            __( '1 Comment', 'wp-starter-theme' ),
-            __( '% Comments', 'wp-starter-theme' )
+            __( 'Leave a comment', 'devstarter' ),
+            __( '1 Comment', 'devstarter' ),
+            __( '% Comments', 'devstarter' )
         );
         echo '</span>';
     }

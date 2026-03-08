@@ -2,7 +2,7 @@
 /**
  * Template part: Search result content
  *
- * @package starter
+ * @package devstarter
  */
 ?>
 
@@ -23,7 +23,7 @@
 
         <footer class="entry-footer">
             <a href="<?php the_permalink(); ?>" class="starter-btn starter-btn--sm">
-                <?php esc_html_e( 'View', 'wp-starter-theme' ); ?>
+                <?php esc_html_e( 'View', 'devstarter' ); ?>
             </a>
         </footer>
     </div>

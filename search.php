@@ -2,7 +2,7 @@
 /**
  * Search Results Template
  *
- * @package starter
+ * @package devstarter
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 
         <header class="archive-header">
             <h1 class="archive-title">
-                <?php printf( esc_html__( 'Search Results for: %s', 'wp-starter-theme' ), '<span>' . get_search_query() . '</span>' ); ?>
+                <?php printf( esc_html__( 'Search Results for: %s', 'devstarter' ), '<span>' . get_search_query() . '</span>' ); ?>
             </h1>
         </header>
 

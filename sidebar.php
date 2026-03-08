@@ -2,7 +2,7 @@
 /**
  * Sidebar Template
  *
- * @package starter
+ * @package devstarter
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

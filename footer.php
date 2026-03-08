@@ -23,12 +23,12 @@
                 echo wp_kses_post( $custom_footer );
             else :
             ?>
-                <p>&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'All rights reserved.', 'wp-starter-theme' ); ?></p>
+                <p>&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'All rights reserved.', 'devstarter' ); ?></p>
             <?php endif; ?>
         </div>
 
         <?php if ( has_nav_menu( 'footer' ) ) : ?>
-            <nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'wp-starter-theme' ); ?>">
+            <nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'devstarter' ); ?>">
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'footer',

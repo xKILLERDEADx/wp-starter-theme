@@ -2,7 +2,7 @@
 /**
  * Custom Post Types Registration
  *
- * @package starter
+ * @package devstarter
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,15 +20,15 @@ function starter_register_post_types() {
     // Example: Portfolio CPT
     // register_post_type( 'portfolio', array(
     //     'labels' => array(
-    //         'name'               => __( 'Portfolio', 'wp-starter-theme' ),
-    //         'singular_name'      => __( 'Project', 'wp-starter-theme' ),
-    //         'add_new'            => __( 'Add New Project', 'wp-starter-theme' ),
-    //         'add_new_item'       => __( 'Add New Project', 'wp-starter-theme' ),
-    //         'edit_item'          => __( 'Edit Project', 'wp-starter-theme' ),
-    //         'view_item'          => __( 'View Project', 'wp-starter-theme' ),
-    //         'all_items'          => __( 'All Projects', 'wp-starter-theme' ),
-    //         'search_items'       => __( 'Search Projects', 'wp-starter-theme' ),
-    //         'not_found'          => __( 'No projects found', 'wp-starter-theme' ),
+    //         'name'               => __( 'Portfolio', 'devstarter' ),
+    //         'singular_name'      => __( 'Project', 'devstarter' ),
+    //         'add_new'            => __( 'Add New Project', 'devstarter' ),
+    //         'add_new_item'       => __( 'Add New Project', 'devstarter' ),
+    //         'edit_item'          => __( 'Edit Project', 'devstarter' ),
+    //         'view_item'          => __( 'View Project', 'devstarter' ),
+    //         'all_items'          => __( 'All Projects', 'devstarter' ),
+    //         'search_items'       => __( 'Search Projects', 'devstarter' ),
+    //         'not_found'          => __( 'No projects found', 'devstarter' ),
     //     ),
     //     'public'             => true,
     //     'has_archive'        => true,
@@ -41,8 +41,8 @@ function starter_register_post_types() {
     // Example: Services CPT
     // register_post_type( 'service', array(
     //     'labels' => array(
-    //         'name'               => __( 'Services', 'wp-starter-theme' ),
-    //         'singular_name'      => __( 'Service', 'wp-starter-theme' ),
+    //         'name'               => __( 'Services', 'devstarter' ),
+    //         'singular_name'      => __( 'Service', 'devstarter' ),
     //     ),
     //     'public'             => true,
     //     'has_archive'        => true,
@@ -64,8 +64,8 @@ function starter_register_taxonomies() {
     // Example: Project Category taxonomy
     // register_taxonomy( 'project_category', 'portfolio', array(
     //     'labels' => array(
-    //         'name'          => __( 'Project Categories', 'wp-starter-theme' ),
-    //         'singular_name' => __( 'Category', 'wp-starter-theme' ),
+    //         'name'          => __( 'Project Categories', 'devstarter' ),
+    //         'singular_name' => __( 'Category', 'devstarter' ),
     //     ),
     //     'public'            => true,
     //     'hierarchical'      => true,

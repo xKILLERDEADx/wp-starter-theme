@@ -2,7 +2,7 @@
 /**
  * Theme Support Features
  *
- * @package starter
+ * @package devstarter
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -62,11 +62,11 @@ function starter_theme_support() {
     add_theme_support( 'wc-product-gallery-slider' );
 
     register_nav_menus( array(
-        'primary' => __( 'Primary Menu', 'wp-starter-theme' ),
-        'footer'  => __( 'Footer Menu', 'wp-starter-theme' ),
+        'primary' => __( 'Primary Menu', 'devstarter' ),
+        'footer'  => __( 'Footer Menu', 'devstarter' ),
     ) );
 
-    load_theme_textdomain( 'wp-starter-theme', STARTER_DIR . '/languages' );
+    load_theme_textdomain( 'devstarter', STARTER_DIR . '/languages' );
 }
 add_action( 'after_setup_theme', 'starter_theme_support' );
 
@@ -82,12 +82,12 @@ function starter_register_block_styles() {
 
     register_block_style( 'core/button', array(
         'name'  => 'starter-outline',
-        'label' => __( 'Outline', 'wp-starter-theme' ),
+        'label' => __( 'Outline', 'devstarter' ),
     ) );
 
     register_block_style( 'core/group', array(
         'name'  => 'starter-shadow',
-        'label' => __( 'Shadow', 'wp-starter-theme' ),
+        'label' => __( 'Shadow', 'devstarter' ),
     ) );
 }
 add_action( 'init', 'starter_register_block_styles' );
@@ -103,14 +103,14 @@ function starter_register_block_patterns() {
     }
 
     register_block_pattern_category( 'starter', array(
-        'label' => __( 'Starter Theme', 'wp-starter-theme' ),
+        'label' => __( 'Starter Theme', 'devstarter' ),
     ) );
 
     register_block_pattern( 'starter/call-to-action', array(
-        'title'       => __( 'Call to Action', 'wp-starter-theme' ),
-        'description' => __( 'A simple call to action section.', 'wp-starter-theme' ),
+        'title'       => __( 'Call to Action', 'devstarter' ),
+        'description' => __( 'A simple call to action section.', 'devstarter' ),
         'categories'  => array( 'starter' ),
-        'content'     => '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} --><div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">' . esc_html__( 'Ready to get started?', 'wp-starter-theme' ) . '</h2><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">' . esc_html__( 'Contact us today to discuss your project.', 'wp-starter-theme' ) . '</p><!-- /wp:paragraph --><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button">' . esc_html__( 'Get in Touch', 'wp-starter-theme' ) . '</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div><!-- /wp:group -->',
+        'content'     => '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} --><div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">' . esc_html__( 'Ready to get started?', 'devstarter' ) . '</h2><!-- /wp:heading --><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">' . esc_html__( 'Contact us today to discuss your project.', 'devstarter' ) . '</p><!-- /wp:paragraph --><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button">' . esc_html__( 'Get in Touch', 'devstarter' ) . '</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div><!-- /wp:group -->',
     ) );
 }
 add_action( 'init', 'starter_register_block_patterns' );
