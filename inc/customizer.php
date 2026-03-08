@@ -163,10 +163,10 @@ add_action( 'customize_register', 'starter_customize_register' );
  * @return void
  */
 function starter_customizer_css() {
-    $primary   = get_theme_mod( 'starter_primary_color', '#2563eb' );
-    $secondary = get_theme_mod( 'starter_secondary_color', '#1e40af' );
-    $header_bg = get_theme_mod( 'starter_header_bg', '#0f172a' );
-    $container = get_theme_mod( 'starter_container_width', '1200' );
+    $primary   = sanitize_hex_color( get_theme_mod( 'starter_primary_color', '#2563eb' ) );
+    $secondary = sanitize_hex_color( get_theme_mod( 'starter_secondary_color', '#1e40af' ) );
+    $header_bg = sanitize_hex_color( get_theme_mod( 'starter_header_bg', '#0f172a' ) );
+    $container = absint( get_theme_mod( 'starter_container_width', '1200' ) );
 
     // Convert hex to RGB for the primary color
     list( $r, $g, $b ) = sscanf( $primary, "#%02x%02x%02x" );

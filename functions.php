@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'STARTER_VERSION', '1.0.0' );
+define( 'STARTER_VERSION', '1.0.1' );
 define( 'STARTER_DIR', get_template_directory() );
 define( 'STARTER_URI', get_template_directory_uri() );
 

@@ -40,7 +40,7 @@ get_header(); ?>
                 <footer class="entry-footer">
                     <?php
                     $tags = get_the_tag_list( '<span class="tags">', ', ', '</span>' );
-                    if ( $tags ) echo $tags;
+                    if ( $tags ) echo wp_kses_post( $tags );
                     ?>
                 </footer>
             </article>
