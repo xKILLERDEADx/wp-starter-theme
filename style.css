@@ -1,0 +1,21 @@
+/*
+Theme Name: WP Starter Theme
+Theme URI: https://github.com/xKILLERDEADx/wp-starter-theme
+Author: Muhammad Abid
+Author URI: https://muhammadabid.com
+Description: A lightweight, developer-friendly WordPress starter theme engineered for rapid custom development. Built with clean PHP, modular architecture, and full compatibility with popular page builders and WooCommerce.
+Version: 1.0.0
+Requires at least: 5.9
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-starter-theme
+Tags: one-column, two-columns, custom-menu, featured-images, translation-ready, theme-options, e-commerce, blog, full-width-template
+*/
+
+/*
+ * All theme styles are loaded via assets/css/main.css
+ * This file is intentionally kept empty per WordPress theme guidelines.
+ * The theme header above is required by WordPress to register the theme.
+ */
