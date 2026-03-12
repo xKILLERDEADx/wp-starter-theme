@@ -33,39 +33,6 @@ git clone https://github.com/xKILLERDEADx/devstarter.git
 
 3. Set up your navigation menu from **Appearance > Menus**.
 
-## Structure
-
-```
-devstarter/
-├── style.css                - Header info
-├── functions.php            - Setup and includes
-├── header.php               - Site header + navigation
-├── footer.php               - Site footer + widgets
-├── index.php                - Main template
-├── single.php               - Single post
-├── page.php                 - Page template
-├── archive.php              - Archive/category pages
-├── search.php               - Search results
-├── 404.php                  - 404 error page
-├── sidebar.php              - Sidebar widget area
-├── comments.php             - Comments template
-├── /assets/
-│   ├── /css/main.css        - Custom styles
-│   ├── /js/main.js          - Custom scripts
-│   └── /images/             - Images
-├── /inc/
-│   ├── theme-support.php    - Features + menus
-│   ├── enqueue.php          - Scripts/styles loading
-│   ├── customizer.php       - Customizer settings
-│   ├── custom-post-types.php - CPT registration
-│   ├── page-builders.php    - Page builder support
-│   └── widgets.php          - Widget areas
-└── /template-parts/
-    ├── content.php           - Post loop content
-    ├── content-none.php      - No results content
-    └── content-search.php    - Search result content
-```
-
 ## Customization
 
 ### CSS Variables
